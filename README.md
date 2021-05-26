@@ -1,4 +1,4 @@
-# this is heading
-this is my first time using git
-so am testing losts of different things
-with git.
+# basic js
+This website contains basic html css and js
+This is a learing website i made in order 
+to learn javascript
