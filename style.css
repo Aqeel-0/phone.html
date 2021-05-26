@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right, #9c27b0, #8ecdff);
+}
+nav{
+    width: 80%;
+    margin: 20px auto;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    z-index:1;
+
+}
+.logo{
+    flex-basis: 20%;
+}
+.logo img{
+    width: 145px;
+}
+.nav-links{
+    flex:1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+.nav-links ul li a{
+    text-decoration:none;
+    color: white;
+}
+.information{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%);
+}
+.overlay{
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    right: 0;
+    top:0%;
+    border-top: 500px solid white;
+    border-right: 500px solid transparent;
+    border-left: 500px solid white;
+    border-bottom: 500px solid white;
+    
+}
+#circle{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    background-color: yellow;
+    transform: rotate(0deg);
+    transition: 1s;
+}
+
+.features img{
+    width: 70px;
+}
+.features {
+    position: absolute;
+    display: flex;
+    color: #fff;
+}
+.features div{
+    margin-left:30px;
+}
+.features p{
+    margin-top: 10px;
+}
+.one{
+    right: 40px;
+    top: 460px;
+}
+.two{
+    right: 400px;
+    top: 220px;
+    transform: rotate(-90deg);
+}
+.three{
+    right: 360px;
+    top: 750px;
+    transform: rotate(90deg);
+}
+.four{
+    left: 90px;
+    top:466px ;
+    transform: rotate(180deg);
+}
+.mobile{
+    width: 200px;
+    position: absolute;
+    top: 30%;
+    left:350px;
+    z-index:1;
+}
+.control{
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.control h3{
+    margin: 15px 0;
+    color: #fff;
+}
+#upbtn{
+    width: 15px;
+    cursor: pointer;
+}
+#downbtn{
+    width: 15px;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
